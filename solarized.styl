@@ -1,0 +1,135 @@
+// * solarized.styl
+
+i = !important
+
+// ** Mixins
+a()
+    color blue i
+
+background-color(c = color-background)
+    if c is "highlight"
+        c = color-background-highlight
+    if c is "highlight-extra"
+        c = color-background-highlight-extra
+    background-color c i
+
+bold()
+    font-weight bold i
+
+border-color(args...)
+    if args
+        c = args
+    else
+        c = color-background-highlight
+    border-color c i
+
+color(c = color-text)
+    color c i
+
+// ** HTML elements
+*
+    // This is handy, because it avoids having to specify the
+    // border-color in many other places.  But it took a while to make
+    // it work with .tabnav's borders.
+    border-color()
+
+a
+    a()
+
+body
+    background-color()
+    color()
+
+input, .input-mini, .input-contrast, input.input-contrast,
+textarea, .comment-form-textarea *
+    background-color highlight
+    color()
+
+// ** Reddit elements
+
+.error
+    color red
+
+input[type="text"]
+textarea
+    border-color comment
+
+// *** Buttons
+button
+.edit-btn
+    background-color highlight-extra
+    color emphasized
+// *** Entries
+
+.entry
+    background-color()
+
+    a
+        color emphasized
+
+    a.author
+        color green
+
+    .domain a
+        color yellow
+
+    .buttons li a
+        color cyan
+    .tagline
+        color comment
+
+.link
+    .rank
+        color comment
+    .score
+        color blue
+// *** Header
+#header
+    background-color highlight
+#sr-header-area
+#header-bottom-right
+    background-color()
+
+    a
+        color()
+#userbarToggle
+    background-color highlight-extra
+
+.pagename a
+    color emphasized
+
+// **** tabmenu
+.tabmenu
+    li a
+        background-color()
+        color()
+    li.selected a
+        background-color highlight-extra
+        color emphasized
+
+// *** Side
+.infobar
+    background-color highlight-extra
+    color emphasized
+
+    a
+        color yellow
+.side
+.linkinfo
+    background-color()
+
+.md
+    color()
+.tagline a
+    color green
+.titlebox form.toggle
+    background-color()
+
+// *** .usertext-body
+.link .usertext-body .md
+    background-color()
+
+// ** RES
+.expando-button
+.RESUserTagImage
+    filter opacity(50%) i

@@ -1,0 +1,110 @@
+@-moz-document domain("reddit.com") {
+  * {
+    border-color: #073642 !important;
+  }
+  a {
+    color: #268bd2 !important;
+  }
+  body {
+    background-color: #002b36 !important;
+    color: #839496 !important;
+  }
+  input,
+  .input-mini,
+  .input-contrast,
+  input.input-contrast,
+  textarea,
+  .comment-form-textarea * {
+    background-color: #073642 !important;
+    color: #839496 !important;
+  }
+  .error {
+    color: #dc322f !important;
+  }
+  input[type="text"],
+  textarea {
+    border-color: #586e75 !important;
+  }
+  button,
+  .edit-btn {
+    background-color: #586e75 !important;
+    color: #93a1a1 !important;
+  }
+  .entry {
+    background-color: #002b36 !important;
+  }
+  .entry a {
+    color: #93a1a1 !important;
+  }
+  .entry a.author {
+    color: #859900 !important;
+  }
+  .entry .domain a {
+    color: #b58900 !important;
+  }
+  .entry .buttons li a {
+    color: #2aa198 !important;
+  }
+  .entry .tagline {
+    color: #586e75 !important;
+  }
+  .link .rank {
+    color: #586e75 !important;
+  }
+  .link .score {
+    color: #268bd2 !important;
+  }
+  #header {
+    background-color: #073642 !important;
+  }
+  #sr-header-area,
+  #header-bottom-right {
+    background-color: #002b36 !important;
+  }
+  #sr-header-area a,
+  #header-bottom-right a {
+    color: #839496 !important;
+  }
+  #userbarToggle {
+    background-color: #586e75 !important;
+  }
+  .pagename a {
+    color: #93a1a1 !important;
+  }
+  .tabmenu li a {
+    background-color: #002b36 !important;
+    color: #839496 !important;
+  }
+  .tabmenu li.selected a {
+    background-color: #586e75 !important;
+    color: #93a1a1 !important;
+  }
+  .infobar {
+    background-color: #586e75 !important;
+    color: #93a1a1 !important;
+  }
+  .infobar a {
+    color: #b58900 !important;
+  }
+  .side,
+  .linkinfo {
+    background-color: #002b36 !important;
+  }
+  .md {
+    color: #839496 !important;
+  }
+  .tagline a {
+    color: #859900 !important;
+  }
+  .titlebox form.toggle {
+    background-color: #002b36 !important;
+  }
+  .link .usertext-body .md {
+    background-color: #002b36 !important;
+  }
+  .expando-button,
+  .RESUserTagImage {
+    filter: opacity(50%) !important;
+  }
+}
+
